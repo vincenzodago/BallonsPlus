@@ -1,18 +1,23 @@
-package be.shark_zekrom.utils;
+package be.shark_zekrom.balloons.utils;
 
 import com.mojang.authlib.GameProfile;
 import com.mojang.authlib.properties.Property;
 import java.lang.reflect.Field;
-import java.util.Collection;
 import java.util.UUID;
+
+import net.kyori.adventure.text.Component;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.inventory.meta.SkullMeta;
 
 public class Skulls {
 
-    public static ItemStack createSkull(String url) {
-        ItemStack head = new ItemStack(Material.PLAYER_HEAD, 1, (short) 3);
+    public static ItemStack createSkull(String url, String name) {
+        ItemStack head = new ItemStack(Material.PLAYER_HEAD, 1);
+        ItemMeta itemMeta = head.getItemMeta();
+        itemMeta.displayName(Component.text(name));
+        head.setItemMeta(itemMeta);
         if (url.isEmpty()) return head;
 
         SkullMeta headMeta = (SkullMeta) head.getItemMeta();
@@ -30,19 +35,6 @@ public class Skulls {
         }
         head.setItemMeta(headMeta);
         return head;
-    }
-
-    public static String getSkull(ItemStack head) throws NoSuchFieldException, IllegalAccessException {
-
-        SkullMeta headMeta = (SkullMeta) head.getItemMeta();
-
-        Field profileField = headMeta.getClass().getDeclaredField("profile");
-        profileField.setAccessible(true);
-        GameProfile profile = (GameProfile) profileField.get(headMeta);
-        Collection<Property> textures = profile.getProperties().get("textures");
-
-
-        return textures.iterator().next().getValue();
     }
 
 }

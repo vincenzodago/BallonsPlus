@@ -1,7 +1,6 @@
 package be.shark_zekrom;
 
 import be.shark_zekrom.utils.Skulls;
-import be.shark_zekrom.utils.SummonBalloons;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
@@ -69,7 +68,7 @@ public class Commands implements CommandExecutor, TabExecutor {
             } else if (args.length > 1) {
 
             if (args[0].equalsIgnoreCase("spawn")) {
-                File file = new File(Main.getInstance().getDataFolder(), "config.yml");
+                File file = new File(Main.getInstance().getDataFolder(), "Settings.yml");
                 YamlConfiguration config = YamlConfiguration.loadConfiguration(file);
                 if (config.getString("Balloons." + args[1]) != null) {
 
@@ -133,7 +132,7 @@ public class Commands implements CommandExecutor, TabExecutor {
 
     public static void reload() {
         try {
-            Main.getInstance().getConfig().load(new File(Main.getInstance().getDataFolder(), "config.yml"));
+            Main.getInstance().getConfig().load(new File(Main.getInstance().getDataFolder(), "Settings.yml"));
 
             Menu.list.clear();
             ConfigurationSection cs = Main.getInstance().getConfig().getConfigurationSection("Balloons");
