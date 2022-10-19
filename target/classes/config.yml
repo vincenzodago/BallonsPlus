@@ -1,0 +1,30 @@
+#
+#
+#
+
+#
+ShowOnlyBalloonsWithPermission: true
+
+#
+ShowParticlesBalloonsOnRemove: true
+
+Messages:
+  BalloonPrefix: "§b[Balloons+] "
+  BalloonReload: "§bSuccessfully reloaded!"
+  NoBalloonsPermission: "§bYou do not have permission to use this balloons."
+  BalloonsRemoved: "§bBalloons removed."
+  BalloonsSummoned: "§bBalloons summoned."
+  BalloonsMenuName: "Balloons"
+  BalloonsMenuPrevious: "§7« §ePrevious"
+  BalloonsMenuNext: "§7« §eNext"
+  BalloonsMenuRemove: "§cRemove"
+  BalloonsMenuClickToSummon: "§6» §eClick to summon"
+  BalloonsMenuNoPermissionToSummon: "§cNo permission to summon"
+  CantOpenInventory: "§bYou can't open the inventory inside a vehicle."
+
+
+Balloons:
+  head:
+    permission: "Ballons+.shark_zekrom"
+    displayname: "§eshark_zekrom"
+    head: "ewogICJ0aW1lc3RhbXAiIDogMTYyNzA1NDA1Mjg5MCwKICAicHJvZmlsZUlkIiA6ICIzMzNhMjQ3ODk3MTE0MDA2YTE3ZDFmOTU4ZjhkMDZmMSIsCiAgInByb2ZpbGVOYW1lIiA6ICJzaGFya196ZWtyb20iLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDBjNzAyODQyZTc0MDM4ODA0YzYzNDUwZTU4YzI4ZTgwOGJjNmFiY2I1M2EwZjI0NTRjN2FkMmRkMDUwNmFhMyIKICAgIH0KICB9Cn0"
