@@ -14,12 +14,12 @@ public class EquipCommand extends SubCommand {
 
     @Override
     public String getDescription() {
-        return "null";
+        return "Open BalloonsPlus GUI";
     }
 
     @Override
     public String getSyntax() {
-        return "null";
+        return "/balloonsPlus equip";
     }
 
     @Override
@@ -34,8 +34,6 @@ public class EquipCommand extends SubCommand {
 
     @Override
     public void perform(Player sender, String[] args) {
-        //TODO
-        //Menu.inventory(sender, 0);
         new BalloonsGUI(sender);
     }
 

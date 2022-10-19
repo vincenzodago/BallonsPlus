@@ -4,7 +4,8 @@ import be.shark_zekrom.balloons.BalloonHandler;
 import be.shark_zekrom.command.CommandManager;
 import be.shark_zekrom.config.ConfigManager;
 import be.shark_zekrom.listener.BalloonsPlusListeners;
-import be.shark_zekrom.balloons.BallonService;
+import be.shark_zekrom.balloons.BalloonService;
+import be.shark_zekrom.messages.MessageService;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -27,12 +28,13 @@ public class Main extends JavaPlugin {
         //Load commands...
         Objects.requireNonNull(this.getCommand("balloonsplus")).setExecutor(new CommandManager());
         //Load service...
-        BallonService.getInstance().startRunnable();
+        BalloonService.getInstance().startRunnable();
+        MessageService.getInstance().loadMessages();
     }
 
     @Override
     public void onDisable() {
         //Remove all equiped balloons...
-        BallonService.getInstance().removeAllBalloon();
+        BalloonService.getInstance().removeAllBalloon();
     }
 }

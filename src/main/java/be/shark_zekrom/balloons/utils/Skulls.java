@@ -18,7 +18,6 @@ public class Skulls {
         ItemMeta itemMeta = head.getItemMeta();
         itemMeta.displayName(Component.text(name));
         head.setItemMeta(itemMeta);
-        if (url.isEmpty()) return head;
 
         SkullMeta headMeta = (SkullMeta) head.getItemMeta();
         GameProfile profile = new GameProfile(UUID.randomUUID(), null);

@@ -1,6 +1,6 @@
 package be.shark_zekrom.listener;
 
-import be.shark_zekrom.balloons.BallonService;
+import be.shark_zekrom.balloons.BalloonService;
 import org.bukkit.entity.*;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.entity.EntityDamageEvent;
@@ -17,7 +17,7 @@ public class BalloonsPlusListeners implements org.bukkit.event.Listener {
     public void onDamage(EntityDamageEvent event) {
         Entity entity = event.getEntity();
         if ((event.getEntity() instanceof Parrot)
-                && BallonService.getInstance().isBalloon((Parrot) entity))
+                && BalloonService.getInstance().isBalloon((Parrot) entity))
             event.setCancelled(true);
     }
 
@@ -26,47 +26,47 @@ public class BalloonsPlusListeners implements org.bukkit.event.Listener {
     public void onTeleport(PlayerTeleportEvent event) {
 
         Player player = event.getPlayer();
-        BallonService ballonService = BallonService.getInstance();
-        if (!ballonService.hasBalloon(player))
+        BalloonService balloonService = BalloonService.getInstance();
+        if (!balloonService.hasBalloon(player))
             return;
-        ballonService.removeBalloon(player);
+        balloonService.removeBalloon(player);
     }
 
     @EventHandler
     public void onDisconnect(PlayerQuitEvent event) {
         Player player = event.getPlayer();
-        BallonService.getInstance().removeBalloon(player);
+        BalloonService.getInstance().removeBalloon(player);
     }
 
     @EventHandler
     public void onDeath(PlayerDeathEvent event) {
         Player player = event.getEntity();
-        BallonService.getInstance().removeBalloon(player);
+        BalloonService.getInstance().removeBalloon(player);
     }
 
     @EventHandler
     public void onLeash(PlayerLeashEntityEvent event) {
         Player player = event.getPlayer();
-        BallonService ballonService = BallonService.getInstance();
-        if (ballonService.hasBalloon(player)) {
-            ballonService.removeBalloon(player);
+        BalloonService balloonService = BalloonService.getInstance();
+        if (balloonService.hasBalloon(player)) {
+            balloonService.removeBalloon(player);
         }
     }
 
     @EventHandler
     public void onUnLeash(PlayerUnleashEntityEvent event) {
-        BallonService ballonService = BallonService.getInstance();
+        BalloonService balloonService = BalloonService.getInstance();
         if ((event.getEntity() instanceof Parrot)
-                && ballonService.isBalloon((Parrot) event.getEntity()))
+                && balloonService.isBalloon((Parrot) event.getEntity()))
             event.setCancelled(true);
     }
 
     @EventHandler
     public void onInteract(PlayerInteractAtEntityEvent event) {
-        BallonService ballonService = BallonService.getInstance();
+        BalloonService balloonService = BalloonService.getInstance();
         Entity clickedEntity = event.getRightClicked();
         if ((clickedEntity instanceof ArmorStand)
-                && ballonService.isArmorStand(event.getPlayer()))
+                && balloonService.isArmorStand(event.getPlayer()))
             event.setCancelled(true);
     }
 

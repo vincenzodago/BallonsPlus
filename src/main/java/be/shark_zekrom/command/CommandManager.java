@@ -3,6 +3,7 @@ package be.shark_zekrom.command;
 import be.shark_zekrom.command.admin.ReloadCommand;
 import be.shark_zekrom.command.user.EquipCommand;
 import be.shark_zekrom.command.user.UnequipCommand;
+import be.shark_zekrom.messages.Message;
 import be.shark_zekrom.utils.NameUtil;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -41,8 +42,7 @@ public class CommandManager implements TabExecutor {
                     SubCommand subCommand = getSubcommands().get(i);
 
                     if (!sender.hasPermission(subCommand.getPermission())) {
-                        sender.sendMessage(ChatColor.RED + "Error: " + ChatColor.RESET
-                                + " You don't have permission to use that command");
+                        Message.BALLOONS_NO_CMD_PERM.send(sender);
                         return true;
                     }
 

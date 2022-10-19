@@ -1,12 +1,11 @@
-# BalloonsPlus
-# Spigot-Paper plugin that allow players to equip balloons
+# BalloonsPlus - Configuration file
 
 ShowOnlyBalloonsWithPermission: true
 
 ShowParticlesBalloonsOnRemove: true
 
 Messages:
-  BalloonPrefix: "§b[Balloons+] "
+  BalloonPrefix: "§b[BalloonsPlus] "
   BalloonReload: "§bSuccessfully reloaded!"
   BalloonsSummoned: "§bBalloons summoned."
   BalloonsRemoved: "§bBalloons removed."
@@ -14,12 +13,13 @@ Messages:
   BalloonsMenuPrevious: "§7« §ePrevious"
   BalloonsMenuNext: "§eNext §7»"
   BalloonsMenuRemove: "§cRemove balloon"
-  BalloonsMenuClickToSummon: "§6» §eClick to summon"
   BalloonsMenuNoPermissionToSummon: "§cNo permission to summon"
+  BalloonsNoCommandPermission: "§cYou don't have permission to use that command"
 
-# The name is arbitrary, ofc you can't have twho balloons with same name.
-# If isDefault is true everyone can use the relative balloon. If isDefault is false permission is needed.
-# Balloon permission: balloonsplus.<balloon_name>.balloon
+# The name is arbitrary, ofc you can't have two balloons with same name.
+# If isDefault is true everyone can use the relative balloon. If isDefault is false then permission is needed.
+# Balloon permission: balloonsplus.<balloon_name>.balloon (Es. balloonsplus.Red_Balloon.balloon).
+# If you change balloon's name you need to update your permission
 # Get balloons key (head VALUE) from https://minecraft-heads.com/
 Balloons:
   Red_Balloon:

@@ -17,3 +17,6 @@ permissions:
   balloonsplus.reload:
     description: reload configuration file
     default: op
+  balloonsplus.default.balloon:
+    description: default balloon permission
+    default: true

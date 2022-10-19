@@ -2,8 +2,8 @@ package be.shark_zekrom.balloons;
 
 import be.shark_zekrom.Main;
 import be.shark_zekrom.balloons.utils.Distance;
-import be.shark_zekrom.config.ConfigManager;
-import net.kyori.adventure.text.Component;
+import be.shark_zekrom.messages.Message;
+import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Particle;
@@ -18,15 +18,13 @@ import org.bukkit.scheduler.BukkitRunnable;
 
 import java.util.*;
 
-public class BallonService {
+public class BalloonService {
 
-    private static BallonService instance;
+    private static BalloonService instance;
     public final HashMap<UUID, Parrot> playerParrot;
     public final HashMap<UUID, ArmorStand> playerArmorStand;
 
-    private int runnableID;
-
-    private BallonService() {
+    private BalloonService() {
         if(instance != null) {
             throw new RuntimeException("Use getInstance() method to get the single instance of this class.");
         }
@@ -36,9 +34,9 @@ public class BallonService {
 
     }
 
-    public static BallonService getInstance() {
+    public static BalloonService getInstance() {
         if(instance == null)
-            instance = new BallonService();
+            instance = new BalloonService();
         return instance;
     }
 
@@ -60,10 +58,17 @@ public class BallonService {
             removeBalloon(player);
         }
 
-        if (!player.hasPermission("balloonsplus." + item.getItemMeta().displayName() + ".balloon")) {
-            player.sendMessage(Component.text(ConfigManager.getInstance()
-                    .getConfig("Settings.yml")
-                    .getString("Messages.BalloonsMenuNoPermissionToSummon","§cNo permission to summon")));
+        @SuppressWarnings("RegExpRedundantEscape")
+        String itemName = PlainTextComponentSerializer.plainText()
+                .serialize(item.displayName()).replaceAll("(^\\[|\\]$)","");
+
+        Balloon balloon = BalloonHandler.getInstance().getBalloon(itemName);
+
+        if (balloon == null)
+            return;
+
+        if (!player.hasPermission(balloon.getPermission())) {
+            Message.BALLOON_NO_PERM.send(player);
             return;
         }
 
@@ -97,6 +102,8 @@ public class BallonService {
 
         playerArmorStand.put(playerUUID, armorStand);
 
+        Message.BALLOON_SUMMONED.send(player);
+
     }
 
     public void removeBalloon(Player player) {
@@ -124,6 +131,8 @@ public class BallonService {
         this.playerParrot.remove(playerUUID);
         parrot.remove();
 
+        Message.BALLOON_REMOVED.send(player);
+
     }
     public void removeAllBalloon() {
         for (Parrot parrot : this.playerParrot.values())
@@ -148,9 +157,7 @@ public class BallonService {
     }
 
     public void startRunnable() {
-
-        this.runnableID = new BukkitRunnable() {
-
+        new BukkitRunnable() {
             public void run() {
 
                 for (UUID playerUUID : playerParrot.keySet()) {
@@ -161,22 +168,16 @@ public class BallonService {
 
                     Parrot parrot = playerParrot.get(playerUUID);
 
-                    if (parrot.getLocation().distance(player.getLocation()) < 6D) {
+                    if (parrot.getWorld().equals(player.getWorld())
+                            && parrot.getLocation().distance(player.getLocation()) < 6D) {
                         if ((parrot).isLeashed())
                             Distance.line(parrot, (parrot).getLeashHolder());
-
                     } else {
                         removeBalloon(player);
                     }
                 }
             }
-
         }.runTaskTimer(Main.getPlugin(Main.class), 0L, 2L).getTaskId();
-
-    }
-
-    public void stopRunnable() {
-        Bukkit.getScheduler().cancelTask(this.runnableID);
     }
 
 }
