@@ -5,7 +5,9 @@ api-version: 1.13
 description: Create a balloon
 commands:
   balloonsplus:
-    description: balloons
+    description: BalloonsPlus main command
+    aliases:
+      - balloon
 
 permissions:
   ballonsplus.equip:

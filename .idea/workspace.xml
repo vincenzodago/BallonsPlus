@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ac1e6de3-8565-49ce-93dc-671828b71e39" name="Changes" comment="Merge remote-tracking branch 'origin/master'">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ballons+/be/shark_zekrom/balloons/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ballons+/be/shark_zekrom/balloons/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ballons+/be/shark_zekrom/balloons/commands/Balloons.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ballons+/be/shark_zekrom/balloons/inventory/Inventorys.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ballons+/be/shark_zekrom/balloons/utils/Distance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ballons+/be/shark_zekrom/balloons/utils/GetSkull.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ballons+/be/shark_zekrom/balloons/utils/Listener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ballons+/be/shark_zekrom/balloons/utils/SlotMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ballons+/be/shark_zekrom/balloons/utils/SummonBallons.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ballons+/plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Balloons+/be/shark_zekrom/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Balloons+/be/shark_zekrom/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Balloons+/be/shark_zekrom/utils/Distance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Balloons+/be/shark_zekrom/utils/InventoryItems.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Balloons+/be/shark_zekrom/utils/SummonBalloons.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Balloons+/plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BallonsPlus-1.7.2-fixed-shaded.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BallonsPlus-1.7.2-fixed.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Settings.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/shark_zekrom/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/shark_zekrom/balloons/Balloon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/shark_zekrom/balloons/BalloonHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/shark_zekrom/balloons/BalloonService$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/shark_zekrom/balloons/BalloonService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/shark_zekrom/balloons/utils/Distance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/shark_zekrom/balloons/utils/Skulls.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/shark_zekrom/command/CommandManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/shark_zekrom/command/SubCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/shark_zekrom/command/admin/ReloadCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/shark_zekrom/command/user/EquipCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/shark_zekrom/command/user/UnequipCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/shark_zekrom/config/ConfigManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/shark_zekrom/gui/BalloonsGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/shark_zekrom/listener/BalloonsPlusListeners.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/shark_zekrom/messages/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/shark_zekrom/messages/MessageService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/shark_zekrom/utils/NameUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-BallonsPlus-1.7.2-fixed.jar" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="vincenzodago" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2G3OJvXkhH8jcWGj25ZUlDzIYWd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Vin\IdeaProjects\BallonsPlus\src\main\resources" />
+      <recent name="C:\Users\Vin\IdeaProjects\BallonsPlus\src\main\java" />
+      <recent name="C:\Users\Vin\IdeaProjects\BallonsPlus\src\main\java\be\shark_zekrom" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ac1e6de3-8565-49ce-93dc-671828b71e39" name="Changes" comment="" />
+      <created>1665613734260</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665613734260</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Massive code rewrite.&#10;Note :&#10;  - Removed balloon creation in game. Modify config and use &quot;/balloonsplus reload&quot; command. (idem for remove balloon)">
+      <created>1666136792664</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666136792664</updated>
+    </task>
+    <task id="LOCAL-00002" summary="- Fixed permissions issue&#10;- Message manager revisited.&#10;- README update">
+      <created>1666210577478</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666210577478</updated>
+    </task>
+    <task id="LOCAL-00003" summary="- Fixed permissions issue&#10;- Message manager revisited.&#10;- README update">
+      <created>1666210608163</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666210608163</updated>
+    </task>
+    <task id="LOCAL-00004" summary="- Fixed permissions issue&#10;- Message manager revisited.&#10;- README update">
+      <created>1666210952906</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666210952906</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Massive code rewrite.&#10;Note :&#10;  - Removed balloon creation in game. Modify config and use &quot;/balloonsplus reload&quot; command. (idem for remove balloon)" />
+    <MESSAGE value="- Fixed permissions issue&#10;- Message manager revisited.&#10;- README update" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Fixed permissions issue&#10;- Message manager revisited.&#10;- README update" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

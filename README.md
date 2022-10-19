@@ -54,3 +54,4 @@ To equip **Pink_Balloon**: _balloonsplus.balloon.Pink_Balloon_
 - Allow the balloons to be attached to the fences
 - Balloons with particles
 - equip <player_name> command (admin command).
+- Allow players head as balloon
