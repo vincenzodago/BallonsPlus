@@ -13,9 +13,9 @@ public class Balloon {
         this.isDefault = isDefault;
 
         if (!isDefault)
-            this.permission = "balloonsplus." + name + ".balloon";
+            this.permission = "balloonsplus.balloon" + name;
         else
-            this.permission = "balloonsplus.default.balloon";
+            this.permission = "balloonsplus.balloon.default";
 
         this.skull = Skulls.createSkull(key,name);
     }

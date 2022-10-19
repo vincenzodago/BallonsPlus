@@ -1,13 +1,14 @@
 # BalloonsPlus - Add balloons on your minecraft server
 ***Forked from :*** [SharkZekrom - BallonsPlus](https://github.com/SharkZekrom/BallonsPlus)
 
-### Commands and command permissions
+### Commands and permissions
 
-|        Command        |      Permission      | Default |
-|:---------------------:|:--------------------:|---------|
-| /balloonsplus reload  | balloonsplus.reload  | false   |
-|  /balloonsplus equip  |  balloonsplus.equip  | true    |
-| /balloonsplus unequip | balloonsplus.unequip | true    |
+|        Command        |          Permission          | Default |
+|:---------------------:|:----------------------------:|---------|
+| /balloonsplus reload  |     balloonsplus.reload      | false   |
+|  /balloonsplus equip  |      balloonsplus.equip      | true    |
+| /balloonsplus unequip |     balloonsplus.unequip     | true    |
+|  | balloonsplus.balloon.default | true    |
 
 ### Balloons and balloon permission
 You can add new balloons from the Settings.yml file. <br>
@@ -42,8 +43,10 @@ Balloons:
     key: "<head_value>"
 ```
 
-To equip **Red_Balloon**: _balloonsplus.balloon.default_ <br>
+To equip **Red_Balloon**: _balloonsplus.balloon.default_<br>
 To equip **Pink_Balloon**: _balloonsplus.balloon.Pink_Balloon_
+
+
 
 ### Planned features (maybe)
 *I don't know if and when this features will be added to the plugin.*
