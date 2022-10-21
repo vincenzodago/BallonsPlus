@@ -43,8 +43,8 @@ Balloons:
     key: "<head_value>"
 ```
 
-To equip **Red_Balloon**: _balloonsplus.balloon.default_<br>
-To equip **Pink_Balloon**: _balloonsplus.balloon.Pink_Balloon_
+To equip **Red_Balloon** players need : _balloonsplus.balloon.default_<br>
+To equip **Pink_Balloon** players need: _balloonsplus.balloon.Pink_Balloon_
 
 
 
